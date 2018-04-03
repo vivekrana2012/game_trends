@@ -1,0 +1,20 @@
+{
+  "name": "gaming_trends",
+  "version": "1.0.0",
+  "description": "A project to track gaming world.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "*",
+    "express": "4.16.1",
+    "nodemon": "*",
+    "mongodb": "^2.2.33",
+    "package.json": "^2.0.1",
+    "request": "^2.81.0",
+    "xml2js": "^0.4.19"
+  },
+  "author": "vivek rana",
+  "license": "ISC"
+}
