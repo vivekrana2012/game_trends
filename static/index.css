@@ -5,4 +5,12 @@
 #dota2matches{
   height: 200px;
   background-color: gray;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+#videoPlayer{
+  float: left;
+  height: 100%;
+  width: 20%;
 }

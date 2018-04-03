@@ -1,4 +1,4 @@
-<html>
+<html ng-app="game_trends">
 <head>
   <title>Gaming Trends</title>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js" ></script>
@@ -7,14 +7,16 @@
   <link rel="stylesheet" type="text/css" href="/index.css">
 </head>
 <body>
-  <div class="container" ng-app="game_trends" ng-controller="AppController">
+  <div class="container">
     <div class="row">
       <div class="col-lg-12 heading">
         <h1>Gaming Trends</h1>
       </div>
     </div>
-    <div class="row" id="dota2matches">
-      
+    <div class="row" id="dota2matches" ng-controller="AppController">
+      <iframe id="videoPlayer" ng-repeat="match in dota2matches"
+        ng-src="{{ trustSrc(match.id) }}">
+      </iframe>
     </div>
   </div>
 </body>
